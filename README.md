@@ -8,6 +8,3 @@ Tinker cad link to sensor:- https://www.tinkercad.com/things/kaDD2PhPZPN-shm-sen
      2. Potentiometer
      3. 220 Ω resistor
      4. Arduino reading the potentiometer through an analog pin and controlling the LED.
-# First review PDF link
-   ### Please check the ppt and prepare the slides we will discuss more in our meeting
-   https://app.slidespeak.co/presentation/cmtt12gln00000agm2cg6gdqo
