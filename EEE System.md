@@ -6,9 +6,13 @@ https://youtu.be/t1IxthM3fIE
 
 ## Explanation for first review:-
 
-My contribution as an **EEE member** is to develop the vibration-sensing and embedded-electronics subsystem of the structural health monitoring system. I will select and interface a **3-axis LIS3DH accelerometer** with an **ESP32** to measure vibrations of the structure along the X, Y and Z axes. The sensor will be rigidly mounted to the test structure so that its vibrations can be accurately measured. I will first design and test the circuit in **Tinkercad**, then build the physical prototype. The ESP32 will collect the sensor readings at an appropriate sampling rate and handle the initial processing of the data.
+My contribution to this project is mainly focused on the **sensor and circuit development**.
 
-I will also work on **signal processing**, including filtering unwanted noise and using **FFT (Fast Fourier Transform)** to convert the vibration signal from the time domain into the frequency domain. From the processed data, features such as peak acceleration and dominant frequencies can be extracted and transmitted through the ESP32's Wi-Fi to the software/AI system. The **AI team will then use these vibration patterns to identify abnormal behavior**, while the Civil Engineering team will help interpret the structural significance of those changes. Thus, my role is essentially to convert **physical structural vibrations → electrical sensor signals → processed digital data**, providing reliable input for the rest of the project.
+As the EEE member, I worked on creating the initial sensor prototype in **Tinkercad**, connecting the sensor circuit with the Arduino, and testing how changes in vibration or displacement can be converted into electrical readings.
+
+My role is to provide the **hardware and sensor data** that can later be processed by the AI and other team members. This connects the physical structure with the digital analysis part of our SHM system.
+
+Going forward, I will work on improving the sensor setup and integrating it with the complete system.
 
 # Hardware for seismic sensor:-
 
