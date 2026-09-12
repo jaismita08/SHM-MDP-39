@@ -13,6 +13,19 @@ As the EEE member, I worked on creating the initial sensor prototype in **Tinker
 My role is to provide the **hardware and sensor data** that can later be processed by the AI and other team members. This connects the physical structure with the digital analysis part of our SHM system.
 
 Going forward, I will work on improving the sensor setup and integrating it with the complete system.
+### Jaismitha (Slides 4, 9, 10)
+
+**Slide 4 (Team Roles):**
+
+"Let me introduce our team and our roles. We are a five-member multidisciplinary team. Madhumitha, from AIML, developed our machine learning models. Tanisha, from CSE, implemented the wireless communication protocols. Manonmani, from Civil, designed the sensor layout on the structure. I am Jaismitha, from EEE, and I managed the hardware and power systems. And Yaswanth, from AIML, handled data structuring and integration."
+
+**Slide 9 (Supporting Data):**
+
+"To support the real-world relevance of our problem, we referred to the IIT Bombay WEL EDL 2025 project. This project helps ground the significance of our multidisciplinary structural health monitoring problem, showing that similar wireless vibration-sensing approaches have already been explored and validated at a reputed institution — which gives us a solid technical reference point to build from."
+
+**Slide 10 (Specific Objectives – Part 1):**
+
+"Now to our specific objectives. The first is to design a wireless sensor node — this node needs to capture vibration and acceleration data from the structure. The second objective is wireless data transmission — we aim to transmit this sensor data wirelessly to a central unit, so it can be processed without needing physical wiring across the structure."
 
 # Hardware for seismic sensor:-
 
