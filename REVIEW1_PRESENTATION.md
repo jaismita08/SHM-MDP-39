@@ -1,1 +1,1 @@
-https://app.slidespeak.co/presentation/cmtpgpscy000r09pm83iqtix1/share?openPanel=ASSISTANT
+https://app.slidespeak.co/presentation/cmty5ag9n000004jnczpy6stp
