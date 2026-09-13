@@ -13,11 +13,11 @@ As the EEE member, I worked on creating the initial sensor prototype in **Tinker
 My role is to provide the **hardware and sensor data** that can later be processed by the AI and other team members. This connects the physical structure with the digital analysis part of our SHM system.
 
 Going forward, I will work on improving the sensor setup and integrating it with the complete system.
-### Jaismitha (Slides 4, 9, 10)
+### Jaismita (Slides 4, 9, 10)
 
 **Slide 4 (Team Roles):**
 
-"Let me introduce our team and our roles. We are a five-member multidisciplinary team. Madhumitha, from AIML, developed our machine learning models. Tanisha, from CSE, implemented the wireless communication protocols. Manonmani, from Civil, designed the sensor layout on the structure. I am Jaismitha, from EEE, and I managed the hardware and power systems. And Yaswanth, from AIML, handled data structuring and integration."
+"Let me introduce our team and our roles. We are a five-member multidisciplinary team. Madhumitha, from AIML, developed our machine learning models. Tanisha, from CSE, implemented the wireless communication protocols. Manonmani, from Civil, designed the sensor layout on the structure. I am Jaismita, from EEE, and I managed the hardware and power systems. And Yaswanth, from AIML, handled data structuring and integration."
 
 **Slide 9 (Supporting Data):**
 
