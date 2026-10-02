@@ -1,4 +1,4 @@
-
+checking connection
 
 The project aims to develop a **smart seismic-resilient building prototype** that combines structural monitoring, sensor technology, artificial intelligence, and automated waste-management to improve safety and disaster response during and after earthquakes.
 
