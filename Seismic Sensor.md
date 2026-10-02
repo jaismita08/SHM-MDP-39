@@ -58,3 +58,163 @@ To generate clean graph data for the AI system, handle initial filtering and sam
 |**Small plastic enclosure**|1|₹150–300|
 |**Miscellaneous**|—|₹100–200|
 |**TOTAL**||**≈ ₹1,600–₹2,300**|
+
+## 🔧 Your EEE checklist for Review II
+
+### 1. Finish the Tinkercad proof-of-concept
+
+You already have most of this.
+
+**Potentiometer → Arduino Uno → vibration value**
+
+You should be able to demonstrate:
+
+- potentiometer simulating vibration/displacement
+- Arduino reading the analog value
+- calculating vibration magnitude
+- Serial Monitor displaying the readings
+- LED responding to vibration level
+
+✅ **This is your current hardware prototype.**
+
+---
+
+### 2. Prepare the real sensor selection
+
+You need to research **which vibration/accelerometer sensor you will eventually use**.
+
+For your PPT, have:
+
+|Requirement|What you need|
+|---|---|
+|Sensor type|Accelerometer / vibration sensor|
+|Measurement|Structural vibration/acceleration|
+|Interface|I²C / SPI / analog, depending on sensor|
+|Measurement range|Appropriate `±g` range|
+|Sensitivity/noise|Important for small structural vibrations|
+|Controller|Arduino/ESP32|
+|Power|Sensor operating voltage|
+|Mounting|How it will attach to the structure|
+
+MEMS accelerometers are commonly used in SHM because they are compact and relatively low-cost, although sensor precision and noise become important for low-amplitude vibration measurements.
+
+You **don't need to buy it yet**.
+
+---
+
+### 3. Make a sensor-selection table
+
+This would be very useful for your Review II PPT.
+
+For example:
+
+|Sensor|Type|Interface|Advantage|Limitation|
+|---|---|---|---|---|
+|MPU6050|MEMS accelerometer|I²C|Cheap, easy to interface|Higher noise|
+|ADXL345|MEMS accelerometer|I²C/SPI|Better suited to acceleration measurement|Still limited for very low-level precision|
+|ADXL355|Low-noise MEMS accelerometer|I²C/SPI|Much lower noise|More expensive|
+|Piezoelectric sensor|Vibration sensor|Analog|Good for dynamic vibration|Not ideal for static acceleration|
+
+Then your team can explain **why the final sensor will be selected after comparing requirements**.
+
+Don't claim a sensor is definitely your final choice until you've checked its datasheet and your project requirements.
+
+---
+
+### 4. Make the EEE block diagram
+
+Your section should have something like:
+
+```
+        STRUCTURE
+            ↓
+     Vibration occurs
+            ↓
+     ┌──────────────┐
+     │   SENSOR     │
+     │ Accelerometer│
+     └──────┬───────┘
+            ↓
+       Arduino/ESP32
+            ↓
+     Signal acquisition
+            ↓
+       Serial / Wi-Fi
+            ↓
+       Python system
+```
+
+This is basically **your EEE contribution to the overall architecture**.
+
+---
+
+### 5. Document the Arduino side
+
+Put your current Arduino implementation in the project documentation.
+
+Explain:
+
+```
+Analog sensor reading
+        ↓
+Equilibrium/reference
+        ↓
+Displacement
+        ↓
+Vibration magnitude
+        ↓
+Warning level
+```
+
+Your Tinkercad potentiometer is essentially a **sensor simulator** for this stage.
+
+---
+
+### 6. Connect your EEE work to the Python graph
+
+Your eventual system should be:
+
+```
+REAL SENSOR
+     ↓
+ARDUINO / ESP32
+     ↓
+VIBRATION DATA
+     ↓
+PYTHON
+     ↓
+LIVE GRAPH
+     ↓
+NORMAL / CRITICAL / SEVERE
+```
+
+For Review II, you can show the **Tinkercad sensor prototype** and the **Python visualization as separate proof-of-concepts**.
+
+Later, when you get the physical sensor, the real sensor replaces the potentiometer and the Python side can remain largely the same.
+
+---
+
+## 📋 So your EEE work before Review II is basically:
+
+**Must have:**
+
+- [x]  Tinkercad circuit
+- [x]  Arduino sensor-reading logic
+- [x]  Vibration calculation
+- [x]  LED indication
+- [x]  Serial output
+- [x]  Python graph file
+- [ ]  Research real accelerometer/vibration-sensor options
+- [ ]  Sensor comparison table
+- [ ]  Decide/propose the sensor based on requirements
+- [ ]  EEE block diagram
+- [ ]  Explain sensor → microcontroller → data pipeline
+- [ ]  Put these into the Review II PPT
+
+**Not required yet:**
+
+- ❌ Physical sensor in hand
+- ❌ Final hardware assembly
+- ❌ Final sensor calibration
+- ❌ Final AI model
+- ❌ Real structural testing
